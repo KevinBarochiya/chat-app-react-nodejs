@@ -7,7 +7,7 @@ const app = express();
 const socket = require("socket.io");
 require("dotenv").config();
 
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "https://chat-app-react-nodejs-6.onrender.com" }));
 app.use(express.json());
 
 mongoose
