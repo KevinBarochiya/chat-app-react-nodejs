@@ -6,13 +6,6 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 export default function App() {
 
-  useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/api/users`)
-      .then(res => res.json())
-      .then(data => console.log(data))
-      .catch(err => console.error("Error fetching users:", err));
-  }, []);
-  
   return (
     <BrowserRouter>
       <Routes>
